@@ -1,5 +1,6 @@
 # Use a lightweight web server
 FROM nginx:alpine
+RUN apk add --no-cache git
 
 # Copy frontend files to the web server
 COPY index.html /usr/share/nginx/html/index.html
